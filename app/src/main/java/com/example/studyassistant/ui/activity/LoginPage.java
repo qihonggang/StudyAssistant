@@ -9,6 +9,7 @@
 package com.example.studyassistant.ui.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -110,6 +111,10 @@ public class LoginPage extends Activity implements OnClickListener{
 
 			public boolean onRegister(UserInfo info) {
 				// 填写处理注册信息的代码，返回true表示数据合法，注册页面可以关闭
+				if (info != null){
+					startActivity(new Intent(LoginPage.this, TabPageIndicatorActivity.class));
+					finish();
+				}
 				return true;
 			}
 		});
