@@ -3,16 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffffff"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/fragment"
+        android:src="@drawable/sky"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+    </ImageView>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
 
         <LinearLayout
             android:id="@+id/linear"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:orientation="vertical" />
     </ScrollView>
 

@@ -55,7 +55,6 @@ public class LoginPage extends Activity implements OnClickListener{
 				if (platform instanceof CustomPlatform) {
 					continue;
 				}
-
 				Button btn = new Button(this);
 				btn.setSingleLine();
 				String name = platform.getName();
@@ -81,6 +80,7 @@ public class LoginPage extends Activity implements OnClickListener{
 			String name = platform.getName();
 			if(!platform.isAuthValid()){
 				btn.setText(getString(R.string.remove_to_format, name));
+
 			} else {
 				btn.setText(getString(R.string.login_to_format, name));
 				String msg = getString(R.string.remove_to_format_success, name);
@@ -112,7 +112,7 @@ public class LoginPage extends Activity implements OnClickListener{
 			public boolean onRegister(UserInfo info) {
 				// 填写处理注册信息的代码，返回true表示数据合法，注册页面可以关闭
 				if (info != null){
-					startActivity(new Intent(LoginPage.this, TabPageIndicatorActivity.class));
+					startActivity(new Intent(LoginPage.this, MainActivity.class));
 					finish();
 				}
 				return true;

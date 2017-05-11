@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#5DA49F</color>
     <color name="windowBackground">@android:color/white</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="tab_text_sel">#343434</color>
 </resources>

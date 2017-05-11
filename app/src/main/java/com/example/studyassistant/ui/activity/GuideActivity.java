@@ -5,14 +5,22 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.studyassistant.R;
+import com.example.studyassistant.sharesdk.login.Tool;
+
+import java.util.List;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
+import cn.sharesdk.framework.CustomPlatform;
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.ShareSDK;
+
+
 
 public class GuideActivity extends Activity {
     private static final String TAG = GuideActivity.class.getSimpleName();
     private BGABanner mBackgroundBanner;
     private BGABanner mForegroundBanner;
-
+    private Boolean isLogin = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +46,35 @@ public class GuideActivity extends Activity {
         mForegroundBanner.setEnterSkipViewIdAndDelegate(R.id.btn_guide_enter, R.id.tv_guide_skip, new BGABanner.GuideDelegate() {
             @Override
             public void onClickEnterOrSkip() {
-                startActivity(new Intent(GuideActivity.this, LoginPage.class));
-                finish();
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        ShareSDK.initSDK(GuideActivity.this);
+                        Platform[] platformlist = ShareSDK.getPlatformList();
+                        if (platformlist != null){
+                            for (Platform platform : platformlist){
+                                if (!Tool.canGetUserInfo(platform)) {
+                                    continue;
+                                }
+                                if (platform instanceof CustomPlatform) {
+                                    continue;
+                                }
+                                if (platform.isAuthValid()){
+                                    isLogin =true;
+                                    break;
+                                }
+                            }
+                            if (isLogin == true){
+                                startActivity(new Intent(GuideActivity.this,MainActivity.class));
+                                finish();
+                            }else {
+                                startActivity(new Intent(GuideActivity.this,LoginPage.class));
+                                finish();
+                            }
+                        }
+                    }
+                });
+
             }
         });
     }

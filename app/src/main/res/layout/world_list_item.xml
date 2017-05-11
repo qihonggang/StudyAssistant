@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#88000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="题本当代前卫建筑，美到让人窒息"
+            android:textSize="18dp"
+
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="建筑"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

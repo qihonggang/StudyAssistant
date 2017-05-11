@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StudyAssistant.iml" filepath="$PROJECT_DIR$/StudyAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-timeline-view-lib/android-timeline-view-lib.iml" filepath="$PROJECT_DIR$/android-timeline-view-lib/android-timeline-view-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tabindicator/tabindicator.iml" filepath="$PROJECT_DIR$/tabindicator/tabindicator.iml" />
     </modules>
   </component>
 </project>
