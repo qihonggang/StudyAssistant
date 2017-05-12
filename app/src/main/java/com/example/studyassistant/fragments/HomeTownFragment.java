@@ -32,7 +32,7 @@ public class HomeTownFragment extends Fragment implements View.OnClickListener {
     //小滑块
     View slip;
 
-    String[] titles = {"空间", "全屋"};
+    String[] titles = {"课程", "美文"};
 
     //水平滚动条
     HorizontalScrollView scrollView;

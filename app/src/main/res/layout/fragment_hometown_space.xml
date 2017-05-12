@@ -16,21 +16,21 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/iv_keting"
+                android:id="@+id/iv_mooc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1dp"
                 android:layout_marginRight="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/keting" />
+                android:src="@drawable/mooc" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="客厅"
-                android:textColor="#fff"
+                android:text="MOOC学院"
+                android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -41,20 +41,20 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/iv_woshi"
+                android:id="@+id/iv_coursera"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/woshi" />
+                android:src="@drawable/coursera" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="卧室"
-                android:textColor="#fff"
+                android:text="Coursera"
+                android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -72,21 +72,21 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/iv_canting"
+                android:id="@+id/iv_imooc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1dp"
                 android:layout_marginRight="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/canting" />
+                android:src="@drawable/imooc" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="餐厅"
-                android:textColor="#fff"
+                android:text="慕课"
+                android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -97,20 +97,20 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/iv_shufang"
+                android:id="@+id/iv_wangyiyun"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginBottom="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/shufang" />
+                android:src="@drawable/wangyiyun" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="书房"
-                android:textColor="#fff"
+                android:text="网易云课堂"
+                android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -128,20 +128,20 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/iv_ertongfang"
+                android:id="@+id/iv_tenxunketang"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginRight="1dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/ertongfang" />
+                android:src="@drawable/tenxunketang" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="儿童房"
-                android:textColor="#fff"
+                android:text="腾讯课堂"
+                android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -152,19 +152,19 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/iv_qita"
+                android:id="@+id/iv_xuetang"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:scaleType="fitXY"
-                android:src="@drawable/qita" />
+                android:src="@drawable/xuetang" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="其他"
-                android:textColor="#fff"
+                android:text="学堂在线"
+                android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
         </FrameLayout>

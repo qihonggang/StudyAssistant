@@ -1,8 +1,8 @@
 package com.example.studyassistant.ui.activity;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentTabHost;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTabHost;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,14 +15,13 @@ import com.example.studyassistant.R;
 import com.example.studyassistant.fragments.GoodFragment;
 import com.example.studyassistant.fragments.HomeTownFragment;
 import com.example.studyassistant.fragments.MineFragment;
-import com.example.studyassistant.fragments.WorldFragment;
 
 
 public class MainActivity extends BaseActivity implements TabHost.OnTabChangeListener {
 
     //底部导航文字
     private String[] tabText = {
-            "世界", "家园", "优品", "我的"
+            "线下", "线上", "学友圈", "我的"
     };
 
     //底部导航图片id数组
@@ -35,7 +34,7 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
 
     //TabHost使用的Fragment数组
     Class[] fragments = {
-            WorldFragment.class, HomeTownFragment.class, GoodFragment.class, MineFragment.class
+            GoodFragment.class, HomeTownFragment.class, GoodFragment.class, MineFragment.class
     };
 
     //控件声明
@@ -70,6 +69,7 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
             //把tabItem添加到TabHost中
             tabHost.addTab(tabItem, fragments[i], null);
         }
+        tabHost.setCurrentTab(1);
         tabHost.setOnTabChangedListener(this);
     }
 
@@ -116,7 +116,7 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
     public void onTabChanged(String tabId) {
         if (tabId.equals("2")){
             startActivity(new Intent(MainActivity.this,LineActivity.class));
-            tabHost.setCurrentTab(0);
+            tabHost.setCurrentTab(1);
         }
     }
 }

@@ -65,13 +65,13 @@
             </intent-filter>
         </activity>
         <!-- <activity android:name=".ui.activity.LineActivity" /> -->
-        <activity
-            android:name=".ui.activity.LineActivity"></activity>
+        <activity android:name=".ui.activity.LineActivity" />
         <activity
             android:name=".ui.activity.UserFeedActivity"
-            android:label="@string/title_activity_user_feed"></activity>
-        <activity android:name=".ui.activity.MainActivity"></activity>
-        <activity android:name=".ui.activity.WorldDetailActivity"></activity>
+            android:label="@string/title_activity_user_feed" />
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.WorldDetailActivity" />
+        <activity android:name=".ui.activity.WebStudyActivity"></activity>
     </application>
 
 </manifest>

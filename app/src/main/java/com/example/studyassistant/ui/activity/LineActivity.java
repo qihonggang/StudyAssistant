@@ -27,7 +27,7 @@ public class LineActivity extends TimelineViewController {
 
     @Override
     protected String getNavTitle() {
-        return "朋友圈";
+        return "学友圈";
     }
 
 
@@ -61,7 +61,7 @@ public class LineActivity extends TimelineViewController {
         textImageItem.userAvatar = "http://file-cdn.datafans.net/avatar/1.jpeg";
         textImageItem.userNick = "Allen";
         textImageItem.title = "";
-        textImageItem.text = "你是我的小苹果 小苹果 我爱你 就像老鼠爱大米 18680551720 [亲亲]";
+        textImageItem.text = "我爱学习，一起来用学习助手[亲亲]";
 
         textImageItem.srcImages.add("http://file-cdn.datafans.net/temp/11.jpg");
         textImageItem.srcImages.add("http://file-cdn.datafans.net/temp/12.jpg");
@@ -96,7 +96,7 @@ public class LineActivity extends TimelineViewController {
 
         LineLikeItem likeItem1_2 = new LineLikeItem();
         likeItem1_2.userId = 10088;
-        likeItem1_2.userNick = "奥巴马";
+        likeItem1_2.userNick = "特朗普";
         textImageItem.likes.add(likeItem1_2);
 
 
@@ -104,15 +104,15 @@ public class LineActivity extends TimelineViewController {
         commentItem1_1.commentId = 1000;
         commentItem1_1.userId = 10086;
         commentItem1_1.userNick = "习大大";
-        commentItem1_1.text = "精彩 大家鼓掌";
+        commentItem1_1.text = "小伙子 有前途";
         textImageItem.comments.add(commentItem1_1);
 
 
         LineCommentItem commentItem1_2 = new LineCommentItem();
         commentItem1_2.commentId = 100980;
         commentItem1_2.userId = 10088;
-        commentItem1_2.userNick = "奥巴马";
-        commentItem1_2.text = "欢迎来到美利坚";
+        commentItem1_2.userNick = "特朗普";
+        commentItem1_2.text = "推特治国 我可是首创啊";
         commentItem1_2.replyUserId = 10086;
         commentItem1_2.replyUserNick = "习大大";
         textImageItem.comments.add(commentItem1_2);
@@ -121,8 +121,8 @@ public class LineActivity extends TimelineViewController {
         LineCommentItem commentItem1_3 = new LineCommentItem();
         commentItem1_3.commentId = 456567;
         commentItem1_3.userId = 10010;
-        commentItem1_3.userNick = "神雕侠侣";
-        commentItem1_3.text = "呵呵";
+        commentItem1_3.userNick = "普金";
+        commentItem1_3.text = "不错";
         textImageItem.comments.add(commentItem1_3);
 
         addItem(textImageItem);
@@ -133,9 +133,9 @@ public class LineActivity extends TimelineViewController {
         textImageItem2.itemType = LineItemType.TextImage;
         textImageItem2.userId = 10088;
         textImageItem2.userAvatar = "http://file-cdn.datafans.net/avatar/2.jpg";
-        textImageItem2.userNick = "奥巴马";
+        textImageItem2.userNick = "特朗普";
         textImageItem2.title = "发表了";
-        textImageItem2.text = "京东JD.COM-专业的综合网上购物商城，销售超数万品牌、4020万种商品，http://jd.com 囊括家电、手机、电脑、服装、图书、母婴、个护、食品、旅游等13大品类。秉承客户为先的理念，京东所售商品为正品行货、全国联保、机打发票。@刘强东";
+        textImageItem2.text = "中国发展真快，牛！！";
 
 
         textImageItem2.srcImages.add("http://file-cdn.datafans.net/temp/20.jpg");
@@ -166,8 +166,8 @@ public class LineActivity extends TimelineViewController {
         LineCommentItem commentItem2_2 = new LineCommentItem();
         commentItem2_2.commentId = 166000;
         commentItem2_2.userId = 10010;
-        commentItem2_2.userNick = "神雕侠侣";
-        commentItem2_2.text = "大家好";
+        commentItem2_2.userNick = "普金";
+        commentItem2_2.text = "还是学习助手好用";
         textImageItem2.comments.add(commentItem2_2);
 
 
@@ -179,9 +179,9 @@ public class LineActivity extends TimelineViewController {
         textImageItem3.itemType = LineItemType.TextImage;
         textImageItem3.userId = 10088;
         textImageItem3.userAvatar = "http://file-cdn.datafans.net/avatar/2.jpg";
-        textImageItem3.userNick = "奥巴马";
+        textImageItem3.userNick = "特朗普";
         textImageItem3.title = "发表了";
-        textImageItem3.text = "京东JD.COM-专业的综合网上购物商城";
+        textImageItem3.text = "我喜欢学习助手，我要向我的国民推荐使用。";
 
         textImageItem3.srcImages.add("http://file-cdn.datafans.net/temp/21.jpg");
 
