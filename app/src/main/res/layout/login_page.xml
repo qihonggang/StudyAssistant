@@ -10,7 +10,7 @@
         android:id="@+id/fragment"
         android:src="@drawable/sky"
         android:layout_width="match_parent"
-        android:layout_height="234dp"
+        android:layout_height="250dp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp">
 
@@ -19,7 +19,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="5dp">
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="#2345">
 
         <LinearLayout
             android:id="@+id/linear"
@@ -27,5 +29,6 @@
             android:layout_height="50dp"
             android:orientation="vertical" />
     </ScrollView>
+
 
 </LinearLayout>

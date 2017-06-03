@@ -27,6 +27,7 @@ public class LineActivity extends TimelineViewController {
 
     @Override
     protected String getNavTitle() {
+
         return "学友圈";
     }
 

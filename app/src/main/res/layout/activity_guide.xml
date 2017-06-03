@@ -47,7 +47,7 @@
         android:layout_marginBottom="60dp"
         android:background="@drawable/selector_btn_test"
         android:padding="8dp"
-        android:text="进入主界面"
+        android:text="开始学习"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:visibility="gone"

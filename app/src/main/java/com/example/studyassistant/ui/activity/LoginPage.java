@@ -19,16 +19,16 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.Toast;
 
 import com.example.studyassistant.R;
+import com.example.studyassistant.sharesdk.login.LoginApi;
+import com.example.studyassistant.sharesdk.login.OnLoginListener;
+import com.example.studyassistant.sharesdk.login.Tool;
+import com.example.studyassistant.sharesdk.login.UserInfo;
 
 import java.util.HashMap;
 
 import cn.sharesdk.framework.CustomPlatform;
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.ShareSDK;
-import com.example.studyassistant.sharesdk.login.LoginApi;
-import com.example.studyassistant.sharesdk.login.OnLoginListener;
-import com.example.studyassistant.sharesdk.login.Tool;
-import com.example.studyassistant.sharesdk.login.UserInfo;
 
 
 public class LoginPage extends Activity implements OnClickListener{
@@ -88,6 +88,7 @@ public class LoginPage extends Activity implements OnClickListener{
 			}
 			//登陆逻辑的调用
 			login(name);
+
 		}
 	}
 
