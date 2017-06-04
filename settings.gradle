@@ -1,1 +1,1 @@
-include ':app',':android-timeline-view-lib'
+include ':app',':android-timeline-view-lib',':baidulib'

@@ -118,6 +118,10 @@ public class MainActivity extends BaseActivity implements TabHost.OnTabChangeLis
             startActivity(new Intent(MainActivity.this,LineActivity.class));
             tabHost.setCurrentTab(1);
         }
+        if (tabId.equals("0")){
+            startActivity(new Intent(MainActivity.this,LbsActivity.class));
+            tabHost.setCurrentTab(1);
+        }
     }
 }
 

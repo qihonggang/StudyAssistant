@@ -2,6 +2,7 @@ package com.example.studyassistant.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -18,6 +19,8 @@ import static com.example.studyassistant.utils.APIManager.XUETANG_URL;
 
 public class WebStudyActivity extends AppCompatActivity {
 
+    WebView webview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +28,7 @@ public class WebStudyActivity extends AppCompatActivity {
         setView();
     }
     private void setView(){
-        WebView webview = (WebView) findViewById(R.id.webStudy);
+        webview = (WebView) findViewById(R.id.webStudy);
         Bundle bundle = this.getIntent().getExtras();
         String url = bundle.getString("url");
         switch (url){
@@ -53,5 +56,14 @@ public class WebStudyActivity extends AppCompatActivity {
         settings.setJavaScriptEnabled(true);
 
 
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(webview.canGoBack()&&keyCode==KeyEvent.KEYCODE_BACK){
+            webview.goBack();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

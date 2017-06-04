@@ -17,10 +17,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.studyassistant.R;
+import com.example.studyassistant.sharesdk.login.OnLoginListener;
+import com.example.studyassistant.sharesdk.login.Tool;
+import com.example.studyassistant.sharesdk.login.UserInfo;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -30,9 +32,6 @@ import java.net.URL;
 
 import cn.sharesdk.framework.Platform;
 import cn.sharesdk.framework.ShareSDK;
-import com.example.studyassistant.sharesdk.login.OnLoginListener;
-import com.example.studyassistant.sharesdk.login.Tool;
-import com.example.studyassistant.sharesdk.login.UserInfo;
 
 /** 此页面时注册页面，需要的话可以不要这个改成您自己的注册页面 */
 public class RegisterPage extends Activity implements OnClickListener, Callback{
@@ -52,7 +51,6 @@ public class RegisterPage extends Activity implements OnClickListener, Callback{
 	private ImageView ivUserIcon;
 	private ImageView ivBoy;
 	private ImageView ivGril;
-	private TextView tvUserNote;
 	private EditText tvUserName;
 	private String picturePath; // 图片路径
 	private UserInfo userInfo = new UserInfo();
@@ -74,14 +72,13 @@ public class RegisterPage extends Activity implements OnClickListener, Callback{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.register_page);
 		tvUserName = (EditText)findViewById(R.id.tv_user_name);
-		tvUserNote = (TextView)findViewById(R.id.tv_user_note);
 		ivUserIcon = (ImageView)findViewById(R.id.iv_user_icon);
+
 		ivBoy = (ImageView)findViewById(R.id.image_boy);
 		ivGril = (ImageView)findViewById(R.id.image_gril);
 
 		ivUserIcon.setOnClickListener(this);
 		findViewById(R.id.tv_ensure).setOnClickListener(this);
-		tvUserNote.setOnClickListener(this);
 		findViewById(R.id.layout_boy).setOnClickListener(this);
 		findViewById(R.id.layout_gril).setOnClickListener(this);
 		findViewById(R.id.ll_back).setOnClickListener(this);
@@ -108,7 +105,6 @@ public class RegisterPage extends Activity implements OnClickListener, Callback{
 			userInfo.setUserNote(platform.getDb().getUserId());
 		}
 		tvUserName.setText(userInfo.getUserName());
-		tvUserNote.setText(userInfo.getUserNote());
 		// 加载头像
 		if(!TextUtils.isEmpty(userInfo.getUserIcon())){
 			loadIcon();

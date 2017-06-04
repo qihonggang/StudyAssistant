@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StudyAssistant</string>
+    <string name="app_name">学习小助手</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -8,7 +8,7 @@
     <string name="sm_item_auth">ShareSDK授权demo</string>
     <string name="not_yet_authorized">尚未授权</string>
     <string name="close_info_dialog">关闭信息界面</string>
-    <string name="login_to_format">登陆到%s</string>
+    <string name="login_to_format">%s</string>
     <string name="remove_to_format">注销%s登录</string>
     <string name="remove_to_format_success">成功移除%s登录信息</string>
 

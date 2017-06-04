@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,54 +11,56 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/iv_mooc"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginBottom="1dp"
-                android:layout_marginRight="1dp"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="50px"
+                android:layout_centerHorizontal="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/mooc" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:text="MOOC学院"
+                android:layout_marginTop="270px"
+                android:layout_centerHorizontal="true"
                 android:textColor="#999"
                 android:textSize="18dp"
-                android:textStyle="bold" />
-        </FrameLayout>
+                android:textStyle="bold"
+                tools:ignore="NotSibling" />
+        </RelativeLayout>
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/iv_coursera"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginBottom="1dp"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="50px"
+                android:layout_centerHorizontal="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/coursera" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270px"
                 android:text="Coursera"
                 android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-        </FrameLayout>
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -66,54 +69,55 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/iv_imooc"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginBottom="1dp"
-                android:layout_marginRight="1dp"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="50px"
+                android:layout_centerHorizontal="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/imooc" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270px"
                 android:text="慕课"
                 android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-        </FrameLayout>
+        </RelativeLayout>
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/iv_wangyiyun"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginBottom="1dp"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="50px"
+                android:layout_centerHorizontal="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/wangyiyun" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270px"
                 android:text="网易云课堂"
                 android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-        </FrameLayout>
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -122,51 +126,54 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/iv_tenxunketang"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginRight="1dp"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="50px"
+                android:layout_centerHorizontal="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/tenxunketang" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270px"
                 android:text="腾讯课堂"
                 android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-        </FrameLayout>
+        </RelativeLayout>
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
                 android:id="@+id/iv_xuetang"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="50px"
+                android:layout_centerHorizontal="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/xuetang" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270px"
                 android:text="学堂在线"
                 android:textColor="#999"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-        </FrameLayout>
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
