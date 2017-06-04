@@ -153,7 +153,7 @@ public class LbsBaseActivity extends AppCompatActivity implements BaiduMap.OnMap
         //不旋转
         mBaiduMap.getUiSettings().setRotateGesturesEnabled(false);
         //设置缩放层级
-        mBaiduMap.setMaxAndMinZoomLevel(19, 12);
+        mBaiduMap.setMaxAndMinZoomLevel(19, 8);
         //图标管理器
         mMarkerManager = new MarkerManager(mBaiduMap);
         //聚合与渲染管理器
@@ -188,9 +188,9 @@ public class LbsBaseActivity extends AppCompatActivity implements BaiduMap.OnMap
     private void initDefaultLocation() {
 
         //珠海经纬度
-        double llat = 22.276012;
+        double llat = 40.2353;
 
-        double llng = 113.583087;
+        double llng = 116.2108;
 
         //显示上方位置的builder
         MyLocationData locData = new MyLocationData.Builder()
@@ -198,7 +198,7 @@ public class LbsBaseActivity extends AppCompatActivity implements BaiduMap.OnMap
                 .direction(0).latitude(llat)
                 .longitude(llng).build();
 
-        //显示上方位置-珠海
+        //显示上方位置-北京
         mBaiduMap.setMyLocationData(locData);
 
         //显示等级-转换：初始化为mDefaultRadius半径的层级用于显示
